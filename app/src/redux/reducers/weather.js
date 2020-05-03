@@ -20,6 +20,7 @@ export function weatherDesc(state = initialState, action) {
     case "declareError":
       return {
         ...state,
+        ...initialState,
         cityName: "The city was not found"
       };
     default:
