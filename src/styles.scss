@@ -1,0 +1,35 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+$border: lighten(rgb(205, 205, 207), 15);
+$shadow: transparentize(#000000, 0.9);
+$btnbackground: #007BFF;
+
+.App {
+  background: #FFFFFF;
+  font-family: sans-serif;
+  text-align: center;
+  width: 450px;
+  margin: auto;
+  padding: 10px;
+  margin-top: 25px;
+  border: 2px solid $border;
+  border-radius: 10px;
+  box-shadow: 0px 10px 1px 1px $shadow;
+  
+  input {
+    margin: auto;
+    width: 80%;
+  }
+  
+  .btn.btn-primary {
+    background: $btnbackground;
+    box-shadow: 0px 5px 1px 1px fade-out($btnbackground, 0.8);
+  }
+}
+
+body {
+  background-image: url("https://cdn.clipart.email/0a9ed316327a551527dbca87f5cd68cb_drawing-transparent-cloud-picture-2250957-drawing-transparent-cloud_530-750.png");
+  background-repeat: repeat;
+  background-size: 100px;
+  background-color: rgba(155, 182, 187, 0.8);
+}
